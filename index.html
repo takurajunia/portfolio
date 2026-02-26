@@ -3,31 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Takura's Portifolio</title>
 </head>
 <body>
     <header>
         <a href="#" class="logo">Takura Junia</a>
 
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-            <a href="#">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-img">
             <img src="main.PNG" alt="">
         </div>
         <div class="home-content">
             <h1>Hello! I'm <span>Takura</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>I am a dedicated software engineering professional passionate about building impactful technology solutions. With strength in web development, machine learning, and problem-solving, I thrive in collaborative environments. I enjoy turning complex challenges into elegant, reliable solutions. Driven by continuous learning and community engagement, I aim to use technology to uplift and empower those around me.</p>
+            <p>
+                I am a dedicated software engineering professional passionate about building impactful technology
+                solutions. With strength in web development, machine learning, and problem-solving, I thrive in
+                collaborative environments. I enjoy turning complex challenges into elegant, reliable solutions.
+                Driven by continuous learning and community engagement, I aim to use technology to uplift and empower
+                those around me.
+            </p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/takura-junia-mudzimbasekwa-0b20ab275" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/takurajunia" target="_blank"><i class="fab fa-github"></i></a>
@@ -36,7 +53,49 @@
                 <a href="https://wa.me/263787532932" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a href="mailto:takurajunia@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
-            <a href="#" class="btn">Hire me</a>
+            <a href="#" class="btn" id="hireMeBtn">HIRE ME</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="services-content">
+            <h2>Services</h2>
+            <p>I design and develop scalable web and mobile applications, integrate machine learning solutions, and provide end-to-end software engineering support — from architecture and deployment to optimization — building digital products that solve real-world problems.</p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills-content">
+            <h2>Skills</h2>
+            <p><b>Core Competencies:</b> Full-Stack Development, Backend Architecture, Machine Learning Integration, DevOps & Deployment Automation, Software Testing & QA.</p>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <div class="education-content">
+            <h2>Education</h2>
+            <p>
+                My education has built a strong foundation in computer science, software engineering principles, and
+                practical problem-solving. Certifications can be found on my LinkedIn profile, showcasing my commitment to continuous learning and staying current with industry trends.
+            </p>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="experience-content">
+            <h2>Experience</h2>
+            <p>
+                Through academic projects and a real-world internship experience, I have over 4 years of experience developing practical, solution-driven systems that address real organizational needs.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2>Contact</h2>
+            <p>
+                You can reach me via LinkedIn, GitHub, WhatsApp, or email using the social links in the Home section.
+            </p>
         </div>
     </section>
 </body>
