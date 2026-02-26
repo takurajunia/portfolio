@@ -300,4 +300,19 @@ span{
         width: 70vw;
         margin-top: 4rem;
     }
+
+    .social-icons{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .social-icons a{
+        width: 3.2rem;
+        height: 3.2rem;
+        font-size: 1.5rem;
+        margin: 2rem 0 2rem 0;
+    }
 }
