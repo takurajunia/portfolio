@@ -301,6 +301,11 @@ span{
         margin-top: 4rem;
     }
 
+    .home-content .btn{
+        display: table;
+        margin: 0 auto;
+    }
+
     .social-icons{
         display: flex;
         flex-wrap: nowrap;
